@@ -1,4 +1,20 @@
 # Endterm-project
+description of project
+
+## Classes
+### Entities
+class User - 
+class Card - 
+class Transaction -
+### Repositories
+class UserRepository - 
+class CardRepository - 
+class TransactionRepository - 
+### Controllers
+class UserController - 
+### Data
+class DB - 
+
 ## PostgreSQL
 ```SQL
 CREATE TABLE users(
@@ -30,6 +46,7 @@ CREATE TABLE transactions(
 	FOREIGN KEY(to_username) REFERENCES users(username)
 );
 ```
+
 ## Author
-* Bakytkereiuly Batyrbek
-* SE-2015
+* Full name: Bakytkereiuly Batyrbek
+* Group: SE-2015
