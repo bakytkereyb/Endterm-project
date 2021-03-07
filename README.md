@@ -3,9 +3,9 @@ description of project
 
 ## Classes
 ### Entities
-class User - 
-class Card - 
-class Transaction -
+	class User - 
+	class Card - 
+	class Transaction -
 ### Repositories
 class UserRepository - 
 class CardRepository - 
