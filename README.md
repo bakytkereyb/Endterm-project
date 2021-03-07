@@ -1,6 +1,7 @@
 # Endterm-project
-description of project
-
+This project focuses on developing an online banking system. The main aim is to create an online banking application that has a lot of functions, so customers can see information about themselves and their banks cards. Also, they are able to transfer money to another customer(user) and see their transaction history.
+Futhermore, there is an another user, that is admin. He/she is responsible to control application. So admins can create account for customer, search customer by username and create account for admin.
+Every user(customer or admin) can see their account information.
 ## Classes
 ### Entities
 	class User - 
