@@ -4,12 +4,12 @@ Futhermore, there is an another user, that is admin. He/she is responsible to co
 Every user(customer or admin) can see their account information.
 ## Classes
 ### Entities
-	class User - 
-	class Card - 
-	class Transaction -
+	class User - this class is responsible for creating an object User and storing information about user. It contains variables 'username', 'password', 'user_type' (customer or admin), 'full_name', 'address'. 
+	class Card - this class is responsible for creating an object Card and storing information about bank card. It contains variables 'id', 'username', 'money', 'number'. 
+	class Transaction - this class is responsible for creating an object Transaction and storing information about transaction. It contains variables 'id', 'date', 'from_username', 'to_username', 'money'.
 ### Repositories
-	class UserRepository - 
-	class CardRepository - 
+	class UserRepository - this class is responsible for creating an object UserRepository. It contains methods 'getUserByUsername' - to get user by username from database; and 'createUser' - to add a new user into database.
+	class CardRepository - this class is responsible for creating an object CardRepository. It contains methods 'createCardForUsername' - to add a new card for username into database; 'getCardByUsername' - to get card by username from database; 'depositMoney' - to update(increase) money of user in database. It is needed in transfering money from someone to someone; 'withdrawMoney' - to update(decrease) money of user in database. It is needed in transfering money from someone to someone.
 	class TransactionRepository - 
 ### Controllers
 	class UserController - 
