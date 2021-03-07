@@ -4,7 +4,9 @@ Futhermore, there is an another user, that is admin. He/she is responsible to co
 Every user(customer or admin) can see their account information.
 ## Classes
 ### Entities
-	class User - this class is responsible for creating an object User and storing information about user. It contains variables 'username', 'password', 'user_type' (customer or admin), 'full_name', 'address'. 
+```
+class User - this class is responsible for creating an object User and storing information about user. It contains variables 'username', 'password', 'user_type' (customer or admin), 'full_name', 'address'. 
+```
 	class Card - this class is responsible for creating an object Card and storing information about bank card. It contains variables 'id', 'username', 'money', 'number'. 
 	class Transaction - this class is responsible for creating an object Transaction and storing information about transaction. It contains variables 'id', 'date', 'from_username', 'to_username', 'money'.
 ### Repositories
