@@ -18,6 +18,7 @@ public class CardRepository implements ICardRepository {
         this.db = db;
     }
 
+    // method to create a new card for one username in db
     @Override
     public boolean createCardForUsername(String username) {
         Connection con = null;
@@ -54,6 +55,7 @@ public class CardRepository implements ICardRepository {
         return false;
     }
 
+    // method to get a card from db
     @Override
     public Card getCardByUsername(String username) {
         Connection con = null;
@@ -97,6 +99,7 @@ public class CardRepository implements ICardRepository {
         return null;
     }
 
+    // method to deposit some money into one card
     @Override
     public boolean depositMoney(int money, String username) {
         Connection con = null;
@@ -137,6 +140,7 @@ public class CardRepository implements ICardRepository {
         return false;
     }
 
+    // method to withdraw some money from one card
     @Override
     public boolean withdrawMoney(int money, String username) {
         Connection con = null;

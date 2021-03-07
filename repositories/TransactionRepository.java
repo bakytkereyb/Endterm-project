@@ -22,6 +22,7 @@ public class TransactionRepository implements ITransactionRepository {
         this.db = db;
     }
 
+    // method to get transactions by username from db
     @Override
     public List<Transaction> getTransactionsByUsername(String username) {
         Connection con = null;
@@ -70,6 +71,7 @@ public class TransactionRepository implements ITransactionRepository {
         return null;
     }
 
+    // method to create a new transaction in db
     @Override
     public boolean createTransaction(Transaction transaction) {
         Connection con = null;

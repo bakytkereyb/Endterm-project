@@ -1,10 +1,15 @@
 package entities;
 
 public class User {
+    // every user has unique username
     private String username;
+    // password of user
     private String password;
+    // true - admin, false - customer
     private boolean user_type;
+    // full name of user
     private String full_name;
+    // address of user
     private String address;
 
     public String getUsername() {
@@ -42,6 +47,7 @@ public class User {
         this.address = address;
     }
 
+    // constructor to create a new User
     public User(String username, String password, boolean user_type, String full_name, String address) {
         setUsername(username);
         setPassword(password);
@@ -49,6 +55,8 @@ public class User {
         setFull_name(full_name);
         setAddress(address);
     }
+
+    // method to get whole info about user
     public String getUserInfo() {
         String out = "";
         out += getUsername() + " | ";

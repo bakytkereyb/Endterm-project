@@ -1,9 +1,13 @@
 package entities;
 
 public class Card {
+    // unique id of card
     private int id;
+    // every user has own card
     private String username;
+    // money in card
     private int money;
+    // card number
     private String number;
 
     public int getId() {
@@ -34,18 +38,22 @@ public class Card {
         this.number = number;
     }
 
+    // constructor to create a new Card
     public Card (int id, String username, int money, String number) {
         setId(id);
         setUsername(username);
         setMoney(money);
         setNumber(number);
     }
+
+    // constructor to create a new Card without id
     public Card (String username, int money, String number) {
         setUsername(username);
         setMoney(money);
         setNumber(number);
     }
 
+    // method to get whole info about card
     public String getCardInfo() {
         String out = "";
         out += getId() + " | ";

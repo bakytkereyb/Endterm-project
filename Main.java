@@ -17,6 +17,7 @@ public class Main {
         UserController controller = new UserController(user_repo, card_repo, trans_repo);
 
         MyApplication app = new MyApplication(controller);
+        // start application
         app.start();
     }
 }

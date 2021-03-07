@@ -19,6 +19,7 @@ public class UserRepository implements IUserRepository {
         this.db = db;
     }
 
+    // method to get one user from db
     @Override
     public User getUserByUsername(String username) {
         Connection con = null;
@@ -63,6 +64,7 @@ public class UserRepository implements IUserRepository {
         return null;
     }
 
+    // method to create a new user in db
     @Override
     public boolean createUser(User user) {
         Connection con = null;

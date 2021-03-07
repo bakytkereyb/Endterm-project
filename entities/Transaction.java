@@ -3,10 +3,15 @@ package entities;
 import java.time.LocalDate;
 
 public class Transaction {
+    // unique id of transaction
     private int id;
+    // transaction date when happened it
     private LocalDate date;
+    // who send money
     private String from_username;
+    // whom money is sent
     private String to_username;
+    // how much money is sent
     private int money;
 
     public int getId() {
@@ -44,12 +49,14 @@ public class Transaction {
         this.money = money;
     }
 
+    // constructor to create a new Transaction
     public Transaction(LocalDate date, String from_username, String to_username, int money) {
         setDate(date);
         setFrom_username(from_username);
         setTo_username(to_username);
         setMoney(money);
     }
+    // constructor to create a new Transaction with id
     public Transaction(int id, LocalDate date, String from_username, String to_username, int money) {
         setId(id);
         setDate(date);
@@ -58,6 +65,7 @@ public class Transaction {
         setMoney(money);
     }
 
+    // method to get whole info about transaction
     public String getTransactionInfo() {
         String out = "";
         out += getId() + " | ";

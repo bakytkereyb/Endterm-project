@@ -13,6 +13,7 @@ public class MyApplication {
     // constant variable for input system
     private final Scanner scanner;
 
+    // variable to store log inned user
     private User loginnedUser = null;
 
     // Constructor for creating a new MyApplication
@@ -40,9 +41,11 @@ public class MyApplication {
                     loginnedUser = user;
                     // true - admin, false - customer
                     if (loginnedUser.isUser_type()) {
+                        // show options for admin
                         adminOptions();
                     }
                     else {
+                        // show options for customer
                         customerOptions();
                     }
                 }
