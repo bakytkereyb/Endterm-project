@@ -3,7 +3,7 @@ description of project
 
 ## Classes
 ### Entities
-	class ```JAVA User ``` - 
+	class User - 
 	class Card - 
 	class Transaction -
 ### Repositories
