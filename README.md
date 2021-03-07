@@ -4,19 +4,17 @@ Futhermore, there is an another user, that is admin. He/she is responsible to co
 Every user(customer or admin) can see their account information.
 ## Classes
 ### Entities
-```
-class User - this class is responsible for creating an object User and storing information about user. It contains variables 'username', 'password', 'user_type' (customer or admin), 'full_name', 'address'. 
-```
+	class User - this class is responsible for creating an object User and storing information about user. It contains variables 'username', 'password', 'user_type' (customer or admin), 'full_name', 'address'. 
 	class Card - this class is responsible for creating an object Card and storing information about bank card. It contains variables 'id', 'username', 'money', 'number'. 
 	class Transaction - this class is responsible for creating an object Transaction and storing information about transaction. It contains variables 'id', 'date', 'from_username', 'to_username', 'money'.
 ### Repositories
 	class UserRepository - this class is responsible for creating an object UserRepository. It contains methods 'getUserByUsername' - to get user by username from database; and 'createUser' - to add a new user into database.
 	class CardRepository - this class is responsible for creating an object CardRepository. It contains methods 'createCardForUsername' - to add a new card for username into database; 'getCardByUsername' - to get card by username from database; 'depositMoney' - to update(increase) money of user in database. It is needed in transfering money from someone to someone; 'withdrawMoney' - to update(decrease) money of user in database. It is needed in transfering money from someone to someone.
-	class TransactionRepository - 
+	class TransactionRepository - this class is responsible for creating an object CardRepository. It contains methods 'getTransactionsByUsername' - to get transaction history of one user; 'createTransaction' - add a new transaction into database.
 ### Controllers
-	class UserController - 
+	class UserController - this class is responsible for creating an object UserController and control whole functions of applicaton. It contains methods 'getUser', 'createUser', 'getTransactionHistory', 'getCardInfo', 'transferMoney'.
 ### Data
-	class DB - 
+	class DB - this class is responsible for creating an object DB and to connect with database.
 
 ## PostgreSQL
 ```SQL
